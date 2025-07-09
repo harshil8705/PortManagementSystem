@@ -56,5 +56,5 @@ python app.py
 **Harshil Parmar**  
 Java Full-Stack Developer | AI & Backend Enthusiast  
 
-[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Harshil_Parmar-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/harshil8705)  
+[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Harshil_Parmar-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/harshil-champaneri/)  
 [![Follow on GitHub](https://img.shields.io/badge/GitHub-harshil8705-black?logo=github&style=for-the-badge)](https://github.com/harshil8705)
