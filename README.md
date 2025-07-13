@@ -60,7 +60,7 @@ A robust and scalable **Port Management System** built with **Java, Spring Boot,
 
 ## 8. Contact
 
-- 🔗 [LinkedIn – Harshil Champaneri](https://www.linkedin.com/in/harshil-champaneri/)
-- 🐙 [GitHub – @harshil8705](https://github.com/harshil8705)
+-  [LinkedIn – Harshil Champaneri](https://www.linkedin.com/in/harshil-champaneri/)
+-  [GitHub – @harshil8705](https://github.com/harshil8705)
 
 Feel free to connect or reach out for queries, feedback, or collaboration!
