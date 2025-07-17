@@ -2,19 +2,28 @@ package port.management.system.chatbot.utility;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Component;
-import port.management.system.service.OrderServiceImpl;
-import port.management.system.service.ProductServiceImpl;
+import port.management.system.service.*;
 
 @Component
 public class ProductTool {
 
     private final OrderServiceImpl orderService;
     private final ProductServiceImpl productService;
+    private final UserServiceImpl userService;
+    private final PortServiceImpl portService;
+    private final CountryServiceImpl countryService;
+    private final ShipServiceImpl shipService;
+    private final ContainerServiceImpl containerService;
 
-    public ProductTool(OrderServiceImpl orderService, ProductServiceImpl productService) {
+    public ProductTool(OrderServiceImpl orderService, ProductServiceImpl productService, UserServiceImpl userService, PortServiceImpl portService, CountryServiceImpl countryService, ShipServiceImpl shipService, ContainerServiceImpl containerService) {
 
         this.orderService = orderService;
         this.productService = productService;
+        this.userService = userService;
+        this.portService = portService;
+        this.countryService = countryService;
+        this.shipService = shipService;
+        this.containerService = containerService;
 
     }
 
@@ -47,6 +56,19 @@ public class ProductTool {
         }
 
         return productService.trackProductStatusByProductId(productId).toString();
+
+    }
+
+    @Tool(name = "getProductsByUser", description = "Get the List of all the products available if User asks for fetching the list of all the products that are available.")
+    public String getProductsByUser() {
+
+        if (userService.getAllProductsByUser().isEmpty()) {
+
+            return "No Products are currently available.";
+
+        }
+
+        return userService.getAllProductsByUser().toString();
 
     }
 
