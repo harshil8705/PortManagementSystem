@@ -18,6 +18,8 @@ public class ChatbotService {
               - Only call it with userConfirmed=true if the user clearly says "yes" after being asked for confirmation.
               - Never cancel without a clear “yes”.
               - Provide the list of products that are available if user asks the information of products that are available.
+              - Do not entertain the users if the user asks the prompt outside of the context of Port-Management-System.
+              - Strictly tell the user in the formal, simple and professional tone to ask the questions related to Port-Management-System only.
             """;
 
     private final ChatClient chatClient;
