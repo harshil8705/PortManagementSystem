@@ -10,20 +10,12 @@ public class ProductTool {
     private final OrderServiceImpl orderService;
     private final ProductServiceImpl productService;
     private final UserServiceImpl userService;
-    private final PortServiceImpl portService;
-    private final CountryServiceImpl countryService;
-    private final ShipServiceImpl shipService;
-    private final ContainerServiceImpl containerService;
 
     public ProductTool(OrderServiceImpl orderService, ProductServiceImpl productService, UserServiceImpl userService, PortServiceImpl portService, CountryServiceImpl countryService, ShipServiceImpl shipService, ContainerServiceImpl containerService) {
 
         this.orderService = orderService;
         this.productService = productService;
         this.userService = userService;
-        this.portService = portService;
-        this.countryService = countryService;
-        this.shipService = shipService;
-        this.containerService = containerService;
 
     }
 
