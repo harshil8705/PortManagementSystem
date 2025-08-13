@@ -57,17 +57,17 @@
 			<artifactId>spring-ai-starter-model-ollama</artifactId>
 		</dependency>
 
-<!--		<dependency>-->
-<!--			<groupId>com.mysql</groupId>-->
-<!--			<artifactId>mysql-connector-j</artifactId>-->
-<!--			<scope>runtime</scope>-->
-<!--		</dependency>-->
-
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>com.h2database</groupId>-->
+<!--			<artifactId>h2</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -126,6 +126,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>port-management-system</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

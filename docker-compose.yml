@@ -1,0 +1,29 @@
+
+
+services:
+  app:
+    build: .
+    ports:
+      - "9090:9090"
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/port_management_db
+      SPRING_DATASOURCE_USERNAME: harshil
+      SPRING_DATASOURCE_PASSWORD: pms-123
+    command: ["./wait-for-it.sh", "mysql:3306", "--", "java", "-jar", "port-management-system.jar"]
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: port_management_db
+      MYSQL_USER: harshil
+      MYSQL_PASSWORD: pms-123
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
