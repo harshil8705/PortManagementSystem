@@ -13,6 +13,8 @@ import lombok.*;
 @AllArgsConstructor
 public class Product {
 
+// product model is having all the foriegn keys that needs to be improved. 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
